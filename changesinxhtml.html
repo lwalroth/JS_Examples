@@ -1,0 +1,56 @@
+<!-- valid in HTML - not valid in XHTML -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+	  <script type="text/javascript">
+	    function compare(a,b) {
+			if (a < b) {
+			  alert("A is less than B");
+			} else if (a > b){
+			  alert("A is greater than B");
+			} else {
+			  alert("A is equal to B")
+			}
+		}	
+	  </script>
+	</head>
+</html>
+
+<!-- valid in XHTML -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+	  <script type="text/javascript">
+	    function compare(a,b) {
+			if (a &lt b) {
+			  alert("A is less than B");
+			} else if (a > b){
+			  alert("A is greater than B");
+			} else {
+			  alert("A is equal to B")
+			}
+		}	
+	  </script>
+	</head>
+</html>
+
+<!-- also valid in XHTML -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+	  <script type="text/javascript"><![CDATA[
+	    function compare(a,b) {
+			if (a < b) {
+			  alert("A is less than B");
+			} else if (a > b) {
+			  alert("A is greater than B");
+			} else {
+			  alert("A is equal to B")
+			}
+		}	
+	  }}></script>
+	</head>
+</html>
